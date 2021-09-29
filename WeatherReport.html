@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather Report</title>
+  </head>
+  <style>
+  body
+  {
+   background-color:wheat;
+   }
+  .container-fluid
+  {
+  padding:15px;
+  }
+  .Title-Image
+  {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   height:200px;
+   width:200px;
+  }
+  .Title
+  {
+   text-align:center;
+  }
+  .container{
+    display: flex;   
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+.Div1{
+    text-align: center;
+    margin: 15px;
+    border: 1.5px black solid;
+    width: 300px;
+    border-radius: 10px;
+    background-color: pink;
+}
+.Div1 > h1{
+    background-color:white;
+    color:black
+}
+.button{
+    margin-bottom: 15px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: grey;
+    color: white;
+    font-size: 15px;
+cursor: pointer;
+}
+p{
+    font-size: 20px;
+    color: white;
+}
+.modal-body > p{
+    color: black;
+}
+.Div1 >h1{
+    padding: 5px;
+    font-family:San-serif;
+}
+.Div1 > img{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+  </style>
+  <body>
+  <div class="container-fluid">
+  <img  src="https://th.bing.com/th/id/R.df9affa800debdcd46a8f98896e46921?rik=wH7lY8c6S0u9vw&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2fweather-icon-for-desktop-56.png&ehk=ju6F9acxeYVMYup40%2fqNScY0WUn7xBFwwcPIekU37Lg%3d&risl=&pid=ImgRaw&r=0"  alt="Weather Forecast" class="Title-Image">
+  <h1 class="Title">WEATHER REPORT</h1>
+ </div>
+ <div class="container">
+ </div>
+ <div id="myModal" class="modal fade">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Div-Head">Country Name</h5>
+                </div>
+                <div class="modal-body" id="modal-body">
+                   
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" >Close</button>                   
+                </div>
+            </div>
+        </div>
+    </div>
+   <script src="script.js"></script>
+  </body>
+  </html>
